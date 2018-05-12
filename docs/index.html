@@ -13,50 +13,103 @@
     <a-assets>
       <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg" crossorigin="anonymous">
       <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg" crossorigin="anonymous">
+      <!-- scene-objects -->
+      <a-asset-item id="house-obj" src="assets/FarmHouse.obj"></a-asset-item>
+      <a-asset-item id="house-mtl" src="assets/FarmHouse.mtl"></a-asset-item>
+
+      <a-asset-item id="lamp-obj" src="assets/lamp.obj"></a-asset-item>
+      <a-asset-item id="lamp-mtl" src="assets/lamp.mtl"></a-asset-item>
+
+      <a-asset-time id="base_street1-obj" src="assets/base_street1.obj"></a-asset-time>
+      <a-asset-time id="base_street1-mtl" src="assets/base_street1.mtl"></a-asset-time>
+
+      <a-asset-time id="base_crossstreet-obj" src="assets/base_crossstreet.obj"></a-asset-time>
+      <a-asset-time id="base_crossstreet-mtl" src="assets/base_crossstreet.mtl"></a-asset-time>
+
+      <a-asset-time id="base_grass1-obj" src="assets/base_grass1.obj"></a-asset-time>
+      <a-asset-time id="base_grass1-mtl" src="assets/base_grass1.mtl"></a-asset-time>
+
+      <a-asset-time id="bld_house1-obj" src="assets/bld_house1.obj"></a-asset-time>
+      <a-asset-time id="bld_house1-mtl" src="assets/bld_house1.mtl"></a-asset-time>
+
+      <a-asset-time id="car_1-obj" src="assets/car_1.obj"></a-asset-time>
+      <a-asset-time id="car_1-mtl" src="assets/car_1.mtl"></a-asset-time>
+
+      <a-asset-time id="car_2-obj" src="assets/car_2.obj"></a-asset-time>
+      <a-asset-time id="car_2-mtl" src="assets/car_2.mtl"></a-asset-time>
+
+      <a-asset-time id="traffic_light-obj" src="assets/traffic_light.obj"></a-asset-time>
+      <a-asset-time id="traffic_light-mtl" src="assets/traffic_light.mtl"></a-asset-time>
+
+      <a-asset-time id="futurama-obj" src="assets/futurama.obj"></a-asset-time>
+      <a-asset-time id="futurama-mtl" src="assets/futurama.mtl"></a-asset-time>
+      <!-- end scene-objects -->
+
     </a-assets>
+ 
+    <a-obj-model src="#car_1-obj" mtl="#car_1-mtl" scale="0.3 0.3 0.3" position="0 .1 -4.3" rotation="0 0 0">
+    </a-obj-model>
 
-    <!-- Primitives. -->
-    <a-box position="-2 0.6 -3" color="#4CC3D9"></a-box>
-    <a-octahedron color="#FF926B" rotation="0 -90 0" radius=".2"></a-octahedron>
-    <a-sphere color="yellow" radius=".2"></a-sphere>
+    <a-obj-model src="#car_2-obj" rotation="0 180 0" position="3 .1 -4.2" scale="0.3 0.3 0.3" mtl="#car_2-mtl" visible="" material="" obj-model=""></a-obj-model>
 
-    <a-plane position="-3 .1 -6" rotation="-90 0 0" width="5" height="2" color="#7BC8A4"></a-plane>
-    <a-plane position="-3 .1 -3" rotation="-90 0 0" width="5" height="2" color="#7BC8A4"></a-plane>
-    <a-plane position="3 .1 -6" rotation="-90 0 0" width="5" height="2" color="#7BC8A4"></a-plane>
-    <a-plane position="3 .1 -3" rotation="-90 0 0" width="5" height="2" color="#7BC8A4"></a-plane>
+    <a-obj-model src="#house-obj" material="assets/FarmHouse_BaseColor.png" mtl="#house-mtl" scale="0.04 0.04 0.04" position="-1.2 .2 -2.3"></a-obj-model>
+    <a-obj-model src="#lamp-obj" mtl="#lamp-mtl" scale="0.03 0.03 0.03" position="-0.6 .2 -2"></a-obj-model>
 
+    <a-obj-model src="#futurama-obj" mtl="#futurama-mtl" position="3 .7 -3"></a-obj-model>
+    <a-obj-model src="#traffic_light-obj" mtl="#traffic_light-mtl" position="1 .2 0"></a-obj-model>
+
+    <a-obj-model src="#base_crossstreet-obj" mtl="#base_crossstreet-mtl" rotation="0 0 0" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" position="0 .1 -1.5"></a-obj-model>
+    <a-obj-model src="#base_crossstreet-obj" mtl="#base_crossstreet-mtl" rotation="0 0 0" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" position="0 .1 -5.5"></a-obj-model>
+    <a-obj-model src="#base_crossstreet-obj" mtl="#base_crossstreet-mtl" rotation="0 0 0" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" position="0 .1 2.5"></a-obj-model>
+    <a-obj-model src="#base_crossstreet-obj" mtl="#base_crossstreet-mtl" rotation="0 0 0" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" position="0 .1 6.5"></a-obj-model>
+
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" rotation="0 90 0" scale="0.04 -0.04 0.04" position="0 .1 -3.5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" rotation="0 90 0" scale="0.04 -0.04 0.04" position="0 .1 .5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" rotation="0 90 0" scale="0.04 -0.04 0.04" position="0 .1 4.5"></a-obj-model>
+    
+    <a-obj-model src="#base_crossstreet-obj" mtl="#base_crossstreet-mtl" rotation="0 0 0" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" position="6 .1 -1.5"></a-obj-model>
+    <a-obj-model src="#base_crossstreet-obj" mtl="#base_crossstreet-mtl" rotation="0 0 0" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" position="6 .1 -5.5"></a-obj-model>
+    <a-obj-model src="#base_crossstreet-obj" mtl="#base_crossstreet-mtl" rotation="0 0 0" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" position="6 .1 2.5"></a-obj-model>
+    <a-obj-model src="#base_basestreet1-obj" mtl="#base_street1-mtl" rotation="0 0 0" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" position="6 .1 6.5"></a-obj-model>
+
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" rotation="0 90 0" scale="0.04 -0.04 0.04" position="6 .1 -3.5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" rotation="0 90 0" scale="0.04 -0.04 0.04" position="6 .1 .5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" rotation="0 90 0" scale="0.04 -0.04 0.04" position="6 .1 4.5"></a-obj-model>
+
+    <a-obj-model src="#base_crossstreet-obj" mtl="#base_crossstreet-mtl" rotation="0 0 0" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" position="-6 .1 -1.5"></a-obj-model>
+    <a-obj-model src="#base_crossstreet-obj" mtl="#base_crossstreet-mtl" rotation="0 0 0" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" position="-6 .1 -5.5"></a-obj-model>
+    <a-obj-model src="#base_crossstreet-obj" mtl="#base_crossstreet-mtl" rotation="0 0 0" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" position="-6 .1 2.5"></a-obj-model>
+    <a-obj-model src="#base_crossstreet-obj" mtl="#base_crossstreet-mtl" rotation="0 0 0" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" position="-6 .1 6.5"></a-obj-model>
+
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" rotation="0 90 0" scale="0.04 -0.04 0.04" position="-6 .1 -3.5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" rotation="0 90 0" scale="0.04 -0.04 0.04" position="-6 .1 .5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" rotation="0 90 0" scale="0.04 -0.04 0.04" position="-6 .1 4.5"></a-obj-model>
+    
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" rotation="0 0 0" position="2 .1 -1.5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" rotation="0 0 0" position="4 .1 -1.5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" rotation="0 0 0" position="-2 .1 -5.5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" rotation="0 0 0" position="-4 .1 -5.5"></a-obj-model>
+
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" rotation="0 0 0" position="-2 .1 -1.5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" rotation="0 0 0" position="-4 .1 -1.5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" rotation="0 0 0" position="2 .1 -5.5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" rotation="0 0 0" position="4 .1 -5.5"></a-obj-model>
+
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" rotation="0 0 0" position="2 .1 2.5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" rotation="0 0 0" position="4 .1 2.5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" rotation="0 0 0" position="-2 .1 2.5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" rotation="0 0 0" position="-4 .1 2.5"></a-obj-model>
+
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" rotation="0 0 0" position="-2 .1 6.5"></a-obj-model>
+    <a-obj-model src="#base_street1-obj" mtl="#base_street1-mtl" visible="" material="" obj-model="" scale="0.04 -0.04 0.04" rotation="0 0 0" position="-4 .1 6.5"></a-obj-model>
     <!-- Background sky. -->
     <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
 
     <!-- Ground. -->
     <a-circle src="#groundTexture" rotation="-90 0 0" radius="32"></a-circle>
-
-
   </a-scene>
 
-  <script>
-    const car1 = document.querySelector('a-octahedron');
-    const car2 = document.querySelector('a-sphere');
-    let pos = -5;
-    let cycle = 1;
-    setInterval(() => {
-      car1.setAttribute('position', `0 0 ${pos}`);
-      pos = cycle % 2 === 0 ? pos - 0.1 : pos + 0.1;
-      if (Math.round(pos) === 0 || Math.round(pos) === -8) {        
-        cycle++;
-      }
-    }, 100);
-
-    let pos2 = -5;
-    let cycle2 = 1;
-    setInterval(() => {
-      car2.setAttribute('position', `${pos2} 0 -4.6`);
-      pos2 = cycle2 % 2 === 0 ? pos2 - 0.1 : pos2 + 0.1;
-      if (Math.round(pos2) === 8 || Math.round(pos2) === -8) {
-        cycle2++;
-      }
-    }, 100);
-  </script>
+  <script type="application/javascript" src="main.js" defer></script>
 </body>
 
 </html>
