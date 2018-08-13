@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My City Builder</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+</head>
+
+<body>
+    <style>
+        .layout-transparent {
+            background: url('./assets/images/top-bg.jpg') center / cover;
+            background-attachment: scroll;
+        }
+
+        .layout-transparent .mdl-layout__header,
+        .layout-transparent .mdl-layout__drawer-button {
+            color: white;
+        }
+    </style>
+
+    <div class="layout-transparent mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">My City Builder</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Title</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">6 (8 tablet)</div>
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet">4 (6 tablet)</div>
+                <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">2 (4 phone)</div>
+            </div>
+            <h1>My City Builder</h1>
+            <p>
+                Projeto de conclusão de curso, feito para simular a criação de uma cidade de acordo com parâmetros inseridos em um formulário.
+            </p>
+            <h2>Instruções</h2>
+            <p></p>
+        </main>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">Title</div>
+                <ul class="mdl-mini-footer__link-list">
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy & Terms</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+
+</html>
